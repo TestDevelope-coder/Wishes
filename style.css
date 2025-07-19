@@ -63,7 +63,6 @@ button:hover {
 .doodle3 { bottom: 10px; left: 10px; }
 .doodle4 { bottom: 10px; right: 10px; }
 
-
 .bodybuilder-gif {
   position: absolute;
   top: 20px;
@@ -73,6 +72,7 @@ button:hover {
   height: auto;
   z-index: 2;
   animation: flex-grow 2s ease-in-out infinite;
+  pointer-events: none;
 }
 
 @keyframes flex-grow {
