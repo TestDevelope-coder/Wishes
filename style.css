@@ -58,7 +58,7 @@ button:hover {
 
 .bodybuilder-gif {
   position: absolute;
-  top: -90px;
+  top: -100px;
   left: 50%;
   transform: translateX(-50%);
   width: 160px;
