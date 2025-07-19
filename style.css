@@ -57,11 +57,13 @@ button:hover {
 .doodle4 { bottom: 10px; right: 10px; }
 
 .bodybuilder-gif {
-  position: absolute;
-  top: -120px;
-  left: 50%;
+  position: fixed;          /* Fixed to the screen */
+  top: 10px;                /* Distance from the top of the screen */
+  left: 50%;                /* Center horizontally */
   transform: translateX(-50%);
   width: 160px;
   height: auto;
+  z-index: 999;             /* Ensure it's on top */
   animation: flex-grow 2s ease-in-out infinite;
+  pointer-events: none;     /* Let clicks pass through */
 }
