@@ -65,7 +65,7 @@
 <body>
   <div class="card">
     <h1>Happy Birthday Aneesh!</h1>
-    <button onclick="revealMessage()">Click me 🎁</button>
+    <button id="revealBtn" onclick="revealMessage()">Click me 🎁</button>
     <p class="message" id="msg">
       Happy Birthday, you accidental legend! 🎉<br>
       We met by pure chance — no past drama, no history — just straight-up good vibes.<br>
@@ -77,6 +77,7 @@
   <img src="https://i.imgur.com/GqBcrmu.png" class="doodle doodle4" alt="cartoon face">  <script>
     function revealMessage() {
       document.getElementById("msg").style.display = "block";
+      document.getElementById("revealBtn").style.display = "none";
     }
   </script></body>
 </html>
