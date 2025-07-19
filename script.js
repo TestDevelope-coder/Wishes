@@ -1,17 +1,18 @@
-// script.js
-
 function revealMessage() {
-  document.getElementById("msg").style.display = "block";
-  document.getElementById("revealBtn").style.display = "none";
-  
-  // Confetti burst from center
+  const msg = document.getElementById("msg");
+  const btn = document.getElementById("revealBtn");
+
+  msg.style.display = "block";
+  btn.style.display = "none";
+
+  // Confetti burst in center
   confetti({
     particleCount: 100,
     spread: 70,
     origin: { y: 0.6 }
   });
 
-  // Left and right burst
+  // Side bursts
   confetti({
     particleCount: 50,
     angle: 60,
@@ -27,22 +28,21 @@ function revealMessage() {
   });
 
   // Falling confetti stream
-  let duration = 2 * 1000;
+  let duration = 3 * 1000;
   let animationEnd = Date.now() + duration;
-  let defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+  let defaults = { startVelocity: 20, spread: 360, ticks: 60, zIndex: 0 };
 
-  let interval = setInterval(function() {
+  let interval = setInterval(() => {
     let timeLeft = animationEnd - Date.now();
-
     if (timeLeft <= 0) {
-      return clearInterval(interval);
+      clearInterval(interval);
     }
-
-    let particleCount = 5 * (timeLeft / duration);
     confetti(Object.assign({}, defaults, {
-      particleCount,
-      origin: { x: Math.random(), y: Math.random() - 0.2 }
+      particleCount: 10,
+      origin: {
+        x: Math.random(),
+        y: Math.random() - 0.2
+      }
     }));
-  }, 250);
+  }, 200);
 }
-
