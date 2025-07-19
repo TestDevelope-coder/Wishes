@@ -1,87 +1,28 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <title>Happy Birthday Aneesh!</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <title>Happy Birthday!</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: #fdf6e3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
-    }
-    .card {
-      background: #fffbe6;
-      border: 3px dashed #ff9900;
-      padding: 30px;
-      max-width: 500px;
-      text-align: center;
-      border-radius: 20px;
-      box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-      position: relative;
-    }
-    h1 {
-      font-size: 2em;
-      color: #ff6600;
-    }
-    p {
-      font-size: 1.1em;
-      color: #333;
-      margin-top: 20px;
-    }
-    button {
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 1em;
-      background: #ff9900;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background: #cc7a00;
-    }
-    .message {
-      display: none;
-      margin-top: 20px;
-    }
-    .doodle {
-      position: absolute;
-      width: 60px;
-    }
-    .doodle1 { top: 10px; left: 10px; }
-    .doodle2 { top: 10px; right: 10px; }
-    .doodle3 { bottom: 10px; left: 10px; }
-    .doodle4 { bottom: 10px; right: 10px; }
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <div class="card">
-    <h1>Happy Birthday!</h1>
+    <h1>Happy Birthday Aneesh!</h1>
     <button id="revealBtn" onclick="revealMessage()">Click me 🎁</button>
     <p class="message" id="msg">
       Happy Birthday, you accidental legend! 🎉<br>
       We met by pure chance — no past drama, no history — just straight-up good vibes.<br>
       You’re that rare kind of friend I can be myself around without worrying about.
     </p>
-  </div>  <img src="images/1F3CB_color.png" class="doodle doodle1" alt="funny doodle">
+  </div>
+
+  <img src="images/1F3CB_color.png" class="doodle doodle1" alt="funny doodle">
   <img src="images/1F3CB_color.png" class="doodle doodle2" alt="gym doodle">
   <img src="images/1F3CB_color.png" class="doodle doodle3" alt="funny dumbbell">
-  <img src="images/1F3CB_color.png" class="doodle doodle4" alt="cartoon face">  <script>
-    function revealMessage() {
-  document.getElementById("msg").style.display = "block";
-  document.getElementById("revealBtn").style.display = "none";
-  confetti(); // Fire confetti
-}
-  </script></body>
+  <img src="images/1F3CB_color.png" class="doodle doodle4" alt="cartoon face">
+
+  <script src="script.js"></script>
+</body>
 </html>
