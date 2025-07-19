@@ -9,3 +9,56 @@ body {
   overflow: hidden;
   position: relative;
 }
+
+.card {
+  background: #fffbe6;
+  border: 3px dashed #ff9900;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+h1 {
+  font-size: 2em;
+  color: #ff6600;
+}
+
+p {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #cc7a00;
+}
+
+.message {
+  display: none;
+  margin-top: 20px;
+}
+
+.doodle {
+  position: absolute;
+  width: 60px;
+}
+
+.doodle1 { top: 10px; left: 10px; }
+.doodle2 { top: 10px; right: 10px; }
+.doodle3 { bottom: 10px; left: 10px; }
+.doodle4 { bottom: 10px; right: 10px; }
